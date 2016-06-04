@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id          =    "com.devX.rail"
+        version     =    "1.0.3"
+        xmlns       =    "http://www.w3.org/ns/widgets"
+        xmlns:gap   =    "http://phonegap.com/ns/1.0"
+        versionCode =    "1">
+  <name>Travel Rail</name>
+  <description>
+        Railways details management tool.
+    </description>
+  <author email="replysam2009@gmail.com" href="">
+      Sameer
+    </author>
+  <content src="index.html"/>
+  <icon src="icon.png" />
+  <allow-navigation href="*" />
+  <allow-navigation href="http://*/*" />
+  <allow-navigation href="https://*/*" />
+  <allow-navigation href="data:*" />
+  <plugin name="cordova-plugin-whitelist" spec="1" />
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="Fullscreen" value="false" />
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <gap:splash src="res/screen/android/screen-hdpi-portrait.png"/>
+</widget>

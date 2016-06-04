@@ -1,0 +1,44 @@
+
+  <ion-view view-title="Live Status">
+      <ion-content class="">
+        <!--<ion-refresher on-refresh="doRefresh()">      
+        </ion-refresher>-->
+        <div ng-controller="LiveStatusController">
+            <div class="card">
+                <div class="item item-divider">
+                    Enter Train Number
+                </div>
+                <div class="item item-text-wrap">
+                    <form name="liveStationForm"   >
+                        <!--<div class="list list-inset">
+                            <label class="item item-input">
+                                <input type="text" placeholder="Train Number" ng-model="train">
+                            </label>
+                        </div>
+                        <div class="padding">
+                            <button type="button" class="button button-block button-positive"  ng-click="CheckLiveStatus();">Submit</button>                  
+                        </div>-->
+                            <input type="radio" ng-model="selDay" value="1" checked="checked"> Today
+                                <input type="radio" ng-model="selDay" value="0"> Yesterday
+                            <div class="item item-input-inset" style="border-bottom:none;padding-bottom:0px;">
+                                <label class="item-input-wrapper">
+                                    <input id="traininit" type="text" placeholder="Train Number" ng-model="train" value="" onkeyup="javascript:getTrainList()">
+                                    
+                                </label>
+                                
+                                <button type="button" class="button button-small button-positive"  ng-click="CheckLiveStatus();">Submit</button>                  
+                            </div>
+                            <div id="tlist" style="display:none;background:#fff;margin-left:1%;width:93.555%;border:1px solid #e1e1e1;padding:5px 5px 5px 5px;">
+                                <ul style="list-style:none;">
+                                    <div id="train-list" class="train-list"></div>
+                                </ul>
+                            </div>
+                         
+                        <div ng-bind-html="msgHTML"></div>
+                    </form>
+                </div>
+            </div>
+            <div ng-bind-html="msgLiveHTML"></div>
+        </div>
+      </ion-content>
+  </ion-view>

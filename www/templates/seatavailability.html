@@ -1,0 +1,36 @@
+
+  <ion-view view-title="Live Status">
+      <ion-content class="">
+        <!--<ion-refresher on-refresh="doRefresh()">      
+        </ion-refresher>-->
+        <div ng-controller="SeatAvailabilityController as ctrl">
+            <div class="card">
+                <div class="item item-divider">
+                    Check Availability
+                </div>
+                <div class="item item-text-wrap">
+                    <form name="availabilityForm">
+                        <div class="list list-inset">
+                            <label class="item item-input">
+                                <input type="text" placeholder="Station Name" ng-model="station" ng-keyup="GetStation();">
+                            </label>
+                        </div>
+                        <div class="padding">
+                            <button type="button" class="button button-block button-positive"  ng-click="CheckPnr();">Submit</button>                  
+                        </div>
+                        <div ng-bind-html="msgHTML"></div>
+                        <div ng-bind-html="fromStationList"></div>
+                        <!--<div style="margin-left:28px;border:1px solid #e1e1e1;border-radius:5px;padding:0px 5px 5px 5px;">
+                            <ul>
+                                <li style="padding-top:7px;">Name Code</li>
+                                <li style="padding-top:7px;">Name Code</li>
+                                <li style="padding-top:7px;">Name Code</li>
+                            </ul>
+                        </div>-->
+                    </form>
+                </div>
+            </div>
+            <div ng-bind-html="msgLiveHTML"></div>
+        </div>
+      </ion-content>
+  </ion-view>
