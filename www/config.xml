@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id          =    "com.devX.rail"
-        version     =    "1.0.3"
+        version     =    "1.0.5"
         xmlns       =    "http://www.w3.org/ns/widgets"
         xmlns:gap   =    "http://phonegap.com/ns/1.0"
         versionCode =    "1">
-  <name>Travel Rail</name>
+  <name>Rail Saathi</name>
   <description>
-        Railways details management tool.
+        An application for people using Indian Railways as their mode of commute.
     </description>
   <author email="replysam2009@gmail.com" href="">
       Sameer
     </author>
   <content src="index.html"/>
   <icon src="icon.png" />
+  <splash src="splash.png" />
   <allow-navigation href="*" />
   <allow-navigation href="http://*/*" />
   <allow-navigation href="https://*/*" />
